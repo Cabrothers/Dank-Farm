@@ -5,7 +5,7 @@ from discord.ext import commands
 
 from colorama import Fore, Style
 
-token = "NjE0NjI2MzA0MjA5MzIxOTg1.Yfh1ZQ.RbfrQwuyx8VS1IZE6ukCaDjFJ8Q"
+token = "Enter Token Here"
 
 #Bot prefix, like ?help 
 
@@ -38,36 +38,6 @@ def RandString():
 client = discord.Client()
 
 client = commands.Bot(command_prefix=prefix,self_bot=True)
-
-#Dep
-
-@client.command(name='dankmemer', aliases=['dank', 'dmc'])
-
-async def dankmemer(ctx):
-
-    await ctx.message.delete()
-
-    count = 0
-
-    while True:
-
-        try:
-
-            count += 1
-
-            await ctx.send('pls dep max', delete_after=0.1)
-
-            
-
-            await ctx.send('pls beg', delete_after=0.1)
-
-            print(f'{Fore.BLUE}[DANK-MEMER]'+Fore.RESET)
-
-            await asyncio.sleep(45)
-
-        except Exception as e:
-
-            print(f"{Fore.RED}[ERROR]: {Fore.YELLOW}{e}"+Fore.RESET)
 
 #Farm
 
